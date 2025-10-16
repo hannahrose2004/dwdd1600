@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hannah Hazelet">
+    <meta name="description" content="History of Food">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="traveler.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Healthly foods vs Unhealthy foods</title>
+
+</head>
+
+
+<body>
+
+    <!--start the page head-->
+    <header>
+        <img src="images/logo.png" alt="Logo for health" width="32" height="50">
+        <span>Your way to a better life</span>
+    </header>
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">History of Food</a></li>
+            <li><a href="yummy.html">Delicious Healthy Foods</a></li>
+            <li><a href="foods.html">Foods</a></li>
+            <li class="active"><a href="favorites.html">Suggest Your Favorite Foods</a></li>
+            <li><a href="price.html">Recipe</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Suggest Your Favorite Foods</h1>
+        <form method="get" class="myPage" action="thanks.html">
+            <fieldset>
+                <Legend>Your Information</Legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="555-555-5555"></label>
+                <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Which Meal!</legend>
+                <label><input type="radio" name="method" value="breakfast">Breakfast</label>
+                <label><input type="radio" name="method" value="lunch">Lunch</label>
+                <label><input type="radio" name="method" value="dinner">Dinner</label>
+                <label><input type="radio" name="method" value="dessert">Dessert</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Type of Food</legend>
+                <label><input type="checkbox" name="meal" value="chosen">Meal</label>
+                <label><input type="checkbox" name="snack" value="chosen">Snack</label>
+                <label><input type="checkbox" name="canned" value="chosen">Canned</label>
+                <label><input type="checkbox" name="dessert" value="chosen">Dessert</label>
+
+                <label>Amount of time to cook
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="short">30 Minutes</option>
+                        <option value="medium">2-3 hrs</option>
+                        <option value="long">5-6 hrs</option>
+                        <option value="overninght">12hrs</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="comments">Type Recipe Here!</textarea>
+
+
+
+            </label>
+
+
+
+
+            <input type="submit" value="Send Your Suggestion!">
+        </form>
+
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Hannah Hazelet &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
